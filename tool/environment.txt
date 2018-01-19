@@ -1,0 +1,30 @@
+# --- General settings --- #
+DATA_DIR=data
+TICKETS_CREATED_ON=YYYY-MM-DD
+DEBUG=false
+
+# --- Assembla settings --- #
+ASSEMBLA_API_HOST=https://api.assembla.com/v1
+ASSEMBLA_URL_TICKETS=https://app.assembla.com/spaces/:space-name/tickets
+ASSEMBLA_SKIP_ASSOCIATIONS=parent,child,story,subtask
+# Ticket types extracted from ticket summary, e.g. starting with 'Spike: '
+ASSEMBLA_TYPES_EXTRA=spike,bug
+ASSEMBLA_CUSTOM_FIELD=field-name
+
+# --- Jira API settings --- #
+# Base must start with 'https?://'
+JIRA_API_HOST=rest/api/2
+# Project type must be scrum (default) or kanban
+JIRA_API_PROJECT_TYPE=scrum
+JIRA_API_UNKNOWN_USER=unknown.user
+JIRA_API_DEFAULT_EMAIL=@example.org
+JIRA_API_IMAGES_THUMBNAIL=description:false,comments:true
+
+# Cross project ticket linking
+JIRA_API_RE_TICKET=https?://.*?\.assembla\.com/spaces/(.*?)/tickets/(\d+)(?:\-[^)\]]+)?(?:\?.*\b)?
+JIRA_API_RE_COMMENT=https?://.*?\.assembla\.com/spaces/(.*?)/tickets/(\d+).*?\?comment=(\d+)(?:#comment:\d+)?
+JIRA_API_BROWSE_ISSUE=browse/[:jira-ticket-key]
+JIRA_API_BROWSE_COMMENT=browse/[:jira-ticket-key]?focusedCommentId=:jira-comment-id&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-[:jira-comment-id]
+
+# --- Jira Agile settings --- #
+JIRA_AGILE_HOST=https://xxxxxxx.atlassian.net/rest/agile/1.0
