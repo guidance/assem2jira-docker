@@ -1,6 +1,5 @@
 # --- General settings --- #
 DATA_DIR=data
-TICKETS_CREATED_ON=YYYY-MM-DD
 DEBUG=false
 
 # --- Assembla settings --- #
@@ -27,4 +26,3 @@ JIRA_API_BROWSE_ISSUE=browse/[:jira-ticket-key]
 JIRA_API_BROWSE_COMMENT=browse/[:jira-ticket-key]?focusedCommentId=:jira-comment-id&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-[:jira-comment-id]
 
 # --- Jira Agile settings --- #
-JIRA_AGILE_HOST=https://xxxxxxx.atlassian.net/rest/agile/1.0

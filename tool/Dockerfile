@@ -10,7 +10,13 @@ RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A170311380
 
 WORKDIR /tool/assembla-to-jira
 
+RUN git clone https://github.com/guidance/assembla-to-jira-migration.git /tool/assembla-to-jira
+
+RUN /bin/bash -c "source /usr/local/rvm/scripts/rvm && rvm install 2.4.1 && gem install bundler && bundle install"
+
 COPY tool.sh /tool/run.sh
 RUN chmod +x /tool/run.sh
+
+COPY environment.txt /tool/assembla-to-jira/.env
 
 ENTRYPOINT /tool/run.sh

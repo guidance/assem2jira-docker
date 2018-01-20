@@ -9,9 +9,13 @@ rvm install 2.4.1
 gem install bundler
 bundle install
 
-echo "\n\n\n"
+echo " "
+echo " "
+echo " "
 
-echo "Needed files are now in place\n"
+echo "Needed files are now in place"
+
+echo " "
 
 echo "The container will be alive until you kill it"
 
