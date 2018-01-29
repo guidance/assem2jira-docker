@@ -42,6 +42,7 @@ Then ran the following commands
 	ruby 07-jira_get_info.rb
 	ruby 08-jira_import_users.rb
 	ruby 08-jira_import_users.rb
+	ruby 09-jira_download_attachments.rb
 
 	# Get some screen IDs from JIRA
 	ruby 10-jira_create_custom_fields.rb 10802 10801
