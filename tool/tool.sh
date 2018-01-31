@@ -19,4 +19,6 @@ echo " "
 
 echo "The container will be alive until you kill it"
 
+cp .env.example .env
+
 while true; do sleep 84600; done
