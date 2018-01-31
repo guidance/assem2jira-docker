@@ -6,7 +6,8 @@
 
 ## Setup
 
-1. Clone Repo
+1. Clone Repo `git clone https://github.com/guidance/assem2jira-docker.git /data/projects/[project-name]`
+1. cd /data/projects/[project-name]
 1. Copy `docker-compose.yml.sample` to `docker-compose.yml`
 1. Set Environment Variables with needed keys and project names
 1. `docker-compose up`
@@ -25,7 +26,7 @@ Ruby wasn't available, so I had to run the following commands:
 	gem install bundler
 	bundle install
 
-Had to adjust the environment variables
+Had to adjust the environment variables, if necessary
 
 	nano .env
 
@@ -45,6 +46,7 @@ Then ran the following commands
 	ruby 02-assembla_export_tickets.rb associations
 	ruby 03-assembla_report_users.rb
 	ruby 04-assembla_report_tickets.rb
+	# ruby 05-jira_create_project.rb << We Don't need this, because our JIRA Project is already there
 	ruby 06-jira_create_issuelink_types.rb
 	ruby 07-jira_get_info.rb
 	ruby 08-jira_import_users.rb

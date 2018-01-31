@@ -16,3 +16,6 @@ services:
       - JIRA_API_SPACE_TO_PROJECT=James Perse:JPT
       - JIRA_AGILE_HOST=https://XXXXXX.atlassian.net/rest/agile/1.0
       - TICKETS_CREATED_ON=2018-01-01
+      - JIRA_ISSUE_DEFAULT_TYPE=story
+      - JIRA_API_STATUSES=New:To Do,In Progress,Blocked,Testable,Ready for Acceptance,In Acceptance Testing,Ready for Deploy,Done,Invalid:Done
+      - ASSEMBLA_TICKET_REPORT=1
