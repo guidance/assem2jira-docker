@@ -29,6 +29,13 @@ Had to adjust the environment variables
 
 	nano .env
 
+	# Some Noteworthy ENV Variables 
+	JIRA_ISSUE_DEFAULT_TYPE=story
+	JIRA_API_STATUSES=New:To Do,In Progress,Blocked,Testable,Ready for Acceptance,In Acceptance Testing,Ready for Deploy,Done,Invalid:Done
+	ASSEMBLA_TICKET_REPORT=4
+	# 0: All Tickets, 1: Active Tickets, order by milestone, 4: Closed Tickets, order by milestone, personal reports start with "u"
+
+
 Then ran the following commands
 
 	ruby 01-assembla_export_space.rb
