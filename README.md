@@ -50,7 +50,6 @@ Then ran the following commands
 	ruby 06-jira_create_issuelink_types.rb
 	ruby 07-jira_get_info.rb
 	ruby 08-jira_import_users.rb
-	ruby 08-jira_import_users.rb
 	ruby 09-jira_download_attachments.rb
 
 	# Get some screen IDs from JIRA
